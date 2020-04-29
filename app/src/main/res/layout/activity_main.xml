@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".5">
+
+
+        <TextView
+            android:id="@+id/enterText"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="right"
+            android:text="Enter Stock Symbol:"
+            android:textSize="22dp"></TextView>
+
+        <TextView
+            android:id="@+id/symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:text="Symbol:"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:text="Name:"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/last"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:text="Last Trade Price:"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/lastTime"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:text="Last Trade Time:"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:text="Change:"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/range"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:text="Range:"
+            android:textSize="18dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="203dp"
+        android:layout_height="731dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/layout">
+
+        <EditText
+            android:id="@+id/enter"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="Enter Symbol"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/black">
+
+            <TextView
+                android:id="@+id/getSymbol"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text=""
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/getName"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|start"
+                android:text=""
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:id="@+id/getLastPrice"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|start"
+                android:text=""
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:id="@+id/getLastTime"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|start"
+                android:text=""
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:id="@+id/getChange"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|start"
+                android:text=""
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:id="@+id/getRange"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|start"
+                android:text=""
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="18dp"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
